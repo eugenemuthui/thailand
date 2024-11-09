@@ -1,0 +1,103 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about, .tips, .experiences, .gallery {
+    background: #f9f9f9;
+}
+
+/* Destinations */
+.destinations {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.destination {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+/* Experiences List */
+.experiences ul {
+    list-style-type: none;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+}
+
+.experiences li {
+    margin-bottom: 10px;
+}
+
+/* Gallery */
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-images img {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .destinations {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .gallery-images img {
+        width: 250px;
+        height: 200px;
+    }
+}
